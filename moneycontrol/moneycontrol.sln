@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moneycontrol", "moneycontrol\moneycontrol.csproj", "{4F4EE91D-6EBC-4C99-BC97-C0276FF556B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moneycontrol.Tests", "moneycontrol.Tests\moneycontrol.Tests.csproj", "{97F971AA-910B-4D8A-BB21-B6E0FA22F4A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F4EE91D-6EBC-4C99-BC97-C0276FF556B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F4EE91D-6EBC-4C99-BC97-C0276FF556B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F4EE91D-6EBC-4C99-BC97-C0276FF556B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F4EE91D-6EBC-4C99-BC97-C0276FF556B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F971AA-910B-4D8A-BB21-B6E0FA22F4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F971AA-910B-4D8A-BB21-B6E0FA22F4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F971AA-910B-4D8A-BB21-B6E0FA22F4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F971AA-910B-4D8A-BB21-B6E0FA22F4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
