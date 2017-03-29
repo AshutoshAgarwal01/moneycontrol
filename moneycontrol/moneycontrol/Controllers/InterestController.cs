@@ -7,6 +7,7 @@ using System.Web.Http;
 using Swashbuckle.Swagger.Annotations;
 using moneycontrol.Models;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace moneycontrol.Controllers
 {
@@ -18,6 +19,15 @@ namespace moneycontrol.Controllers
         [Route("api/Interest/Simple/{p}/{r}/{t}")]
         public IHttpActionResult Simple(int p, int r, int t)
         {
+            //To explore application specific logs in azure.
+            Trace.TraceInformation("Begin: Simple interest calculator.");
+
+            //Just to explore EventLogs of Azure.
+            if(p == -1)
+            {
+                throw new ArgumentException();
+            }
+
             if(t < 0)
             {
                 return Content(HttpStatusCode.BadRequest, new ErrorBody("E0001", "Time cannot be negative or zero."));
@@ -34,6 +44,13 @@ namespace moneycontrol.Controllers
 
             double interest = (p * r * t) / 100;
             return Content(HttpStatusCode.OK, interest);
+        }
+
+        [HttpGet]
+        [SwaggerResponse(HttpStatusCode.OK, Type = typeof(string))]
+        public IHttpActionResult HealthCheck()
+        {
+            return Content(HttpStatusCode.OK, "Perfect");
         }
     }
 }
